@@ -1,6 +1,9 @@
 import React, { useEffect } from 'react';
 import axios from 'axios';
 import './index.css';
+import RestData from 'component/RestData/index';
+import upTriangle from 'assets/caret-up-solid.svg';
+import downTriangle from 'assets/caret-down-solid.svg';
 
 const ResturantDetails = () => {
   useEffect(() => {
@@ -23,14 +26,20 @@ const ResturantDetails = () => {
           <h1>Guest</h1>
         </div>
         <div className='restData'>
-          <div className='leftSide'>
-            <h4>Average Complaints Ratio</h4>
-            <h1 className='number'>16</h1>
-          </div>
-          <div className='rightSide'>
-            <h4>Average Window Time</h4>
-            <h1 className='number'>70s</h1>
-          </div>
+          <RestData
+            title={'Average Complaints Ratio'}
+            number={{ numberValue: '16', triangle: upTriangle }}
+            subTitle={'8'}
+            star={'2'}
+            rating={'3'}
+          />
+          <RestData
+            title={'Average Window Time'}
+            number={{ numberValue: '70s', triangle: downTriangle }}
+            subTitle={'83s'}
+            star={'3'}
+            rating={'5s'}
+          />
         </div>
       </div>
     </div>

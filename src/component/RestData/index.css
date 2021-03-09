@@ -1,0 +1,9 @@
+.innerData {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.triangleIcon {
+  width: 20px;
+}

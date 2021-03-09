@@ -1,4 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 .mainDiv {
+  font-family: 'Roboto', sans-serif;
   display: grid;
   place-items: center;
   height: 100vh;
@@ -7,21 +9,13 @@
 .card {
   display: flex;
   box-shadow: -2px 0px 12px -4px rgba(0, 0, 0, 0.75);
+  border: 2px solid rgb(14, 217, 231);
   flex-direction: column;
   border-radius: 7px;
-  /* justify-content: center; */
 }
 .header > h1 {
   margin: 10px;
 }
 .restData {
   display: flex;
-}
-
-.leftSide,
-.rightSide {
-  margin: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
