@@ -4,6 +4,8 @@ import './index.css';
 import RestData from 'component/RestData/index';
 import upTriangle from 'assets/caret-up-solid.svg';
 import downTriangle from 'assets/caret-down-solid.svg';
+import SolidStar from 'assets/star-solid.svg';
+import RegularStar from 'assets/star-regular.svg';
 
 const ResturantDetails = () => {
   useEffect(() => {
@@ -30,14 +32,14 @@ const ResturantDetails = () => {
             title={'Average Complaints Ratio'}
             number={{ numberValue: '16', triangle: upTriangle }}
             subTitle={'8'}
-            star={'2'}
+            star={[SolidStar, SolidStar, RegularStar, RegularStar, RegularStar]}
             rating={'3'}
           />
           <RestData
             title={'Average Window Time'}
             number={{ numberValue: '70s', triangle: downTriangle }}
             subTitle={'83s'}
-            star={'3'}
+            star={[SolidStar, SolidStar, SolidStar, RegularStar, RegularStar]}
             rating={'5s'}
           />
         </div>
