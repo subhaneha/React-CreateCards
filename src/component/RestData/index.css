@@ -1,12 +1,19 @@
 .innerData {
+  position: relative;
   padding: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-/* .title {
-  display: relative;
-} */
 .icon {
   width: 25px;
+}
+.info {
+  position: absolute;
+  top: 0;
+  width: 15px;
+}
+.tooltip {
+  position: absolute;
+  top: 0;
 }

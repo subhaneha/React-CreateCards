@@ -1,5 +1,6 @@
 import React from 'react';
 import './index.css';
+import InfoCircle from '../../assets/info-circle-solid.svg';
 
 const RestData = ({ title, number, subTitle, star, rating }) => {
   const { numberValue, triangle } = number;
@@ -7,7 +8,8 @@ const RestData = ({ title, number, subTitle, star, rating }) => {
     <div className='innerData'>
       <h4 className='title'>
         {title}
-        {/* <span className="tooltip"></span> */}
+        <img className='info' src={InfoCircle} alt='' />
+        {/* <p className='tooltip'>some info</p> */}
       </h4>
       <h1 className='number'>
         {numberValue} <img className='icon' src={triangle} alt='' />
