@@ -2,14 +2,17 @@ import React from 'react';
 import './index.css';
 import InfoCircle from '../../assets/info-circle-solid.svg';
 
-const RestData = ({ title, number, subTitle, star, rating }) => {
+const RestData = ({ title, number, subTitle, star, rating, tooltip }) => {
   const { numberValue, triangle } = number;
   return (
     <div className='innerData'>
       <h4 className='title'>
         {title}
-        <img className='info' src={InfoCircle} alt='' />
-        {/* <p className='tooltip'>some info</p> */}
+
+        <div className='info'>
+          <img src={InfoCircle} alt='' />
+          <p className='tooltip'>{tooltip}</p>
+        </div>
       </h4>
       <h1 className='number'>
         {numberValue} <img className='icon' src={triangle} alt='' />

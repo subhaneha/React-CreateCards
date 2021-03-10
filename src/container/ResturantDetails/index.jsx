@@ -30,6 +30,7 @@ const ResturantDetails = () => {
         <div className='restData'>
           <RestData
             title={'Average Complaints Ratio'}
+            tooltip={'Average Complaints Ratio info'}
             number={{ numberValue: '16', triangle: upTriangle }}
             subTitle={'8'}
             star={[SolidStar, SolidStar, RegularStar, RegularStar, RegularStar]}
@@ -37,6 +38,7 @@ const ResturantDetails = () => {
           />
           <RestData
             title={'Average Window Time'}
+            tooltip={'Average Window Time info'}
             number={{ numberValue: '70s', triangle: downTriangle }}
             subTitle={'83s'}
             star={[SolidStar, SolidStar, SolidStar, RegularStar, RegularStar]}

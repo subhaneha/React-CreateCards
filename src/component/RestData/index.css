@@ -11,9 +11,26 @@
 .info {
   position: absolute;
   top: 0;
+  right: 0;
   width: 15px;
 }
 .tooltip {
+  display: none;
   position: absolute;
-  top: 0;
+  right: 13px;
+  top: -91px;
+  font-size: 14px;
+  margin: 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 0.5px solid #333;
+  width: 100px;
+  height: 80px;
+  border-radius: 2.5px;
+}
+.info > p {
+  word-break: keep-all;
+}
+.title .info:hover .tooltip {
+  display: flex;
 }
