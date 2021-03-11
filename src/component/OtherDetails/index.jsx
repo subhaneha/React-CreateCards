@@ -2,7 +2,7 @@ import React from 'react';
 import './index.css';
 import InfoCircle from '../../assets/info-circle-solid.svg';
 
-const RestData = ({ title, number, subTitle, star, rating, tooltip }) => {
+const OtherDetails = ({ title, number, subTitle, star, rating, tooltip }) => {
   const { numberValue, triangle } = number;
   return (
     <div className='innerData'>
@@ -24,9 +24,9 @@ const RestData = ({ title, number, subTitle, star, rating, tooltip }) => {
           <img key={index} className='icon' src={starIcon} alt='' />
         ))}
       </div>
-      <p>Next star : Reduced by {rating}</p>
+      <p>Next star : {rating}</p>
     </div>
   );
 };
 
-export default RestData;
+export default OtherDetails;
