@@ -45,5 +45,18 @@ const cardDetails = [
       },
     ],
   },
+  {
+    header: 'Standard',
+    otherDetailsData: [
+      {
+        title: 'Brand Standards',
+        tooltip: 'Brand Standards',
+        number: { numberValue: '73%', triangle: downTriangle },
+        subTitle: '87%',
+        star: [SolidStar, SolidStar, SolidStar, RegularStar, RegularStar],
+        rating: 'Increased by 13%',
+      },
+    ],
+  },
 ];
 export default cardDetails;

@@ -4,9 +4,9 @@ import OtherDetails from 'component/OtherDetails';
 
 const Card = ({ header, otherDetailsData }) => {
   return (
-    <div className='card'>
+    <div className={`card ${header}`}>
       <div className='header'>
-        <h1>{header}</h1>
+        <h4>{header}</h4>
       </div>
       <div className='OtherDetails'>
         {otherDetailsData.map((data) => (

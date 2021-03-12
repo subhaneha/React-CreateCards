@@ -1,12 +1,13 @@
 .innerData {
   position: relative;
-  padding: 10px;
+  padding: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 .icon {
-  width: 25px;
+  width: 15px;
 }
 .info {
   position: absolute;
@@ -23,6 +24,7 @@
   margin: 0;
   padding: 10px;
   background-color: #fff;
+  color: #000;
   border: 0.5px solid #333;
   width: 100px;
   height: 80px;
@@ -33,4 +35,20 @@
 }
 .title .info:hover .tooltip {
   display: flex;
+}
+.title {
+  font-size: 12px;
+  margin: 3px;
+}
+.number {
+  font-size: 20px;
+  margin: 3px;
+}
+.previous {
+  font-size: 16px;
+  margin: 3px;
+}
+.nextStar {
+  font-size: 12px;
+  margin: 3px;
 }

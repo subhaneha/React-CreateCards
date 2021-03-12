@@ -6,25 +6,25 @@ const OtherDetails = ({ title, number, subTitle, star, rating, tooltip }) => {
   const { numberValue, triangle } = number;
   return (
     <div className='innerData'>
-      <h4 className='title'>
+      <p className='title'>
         {title}
 
         <div className='info'>
           <img src={InfoCircle} alt='' />
           <p className='tooltip'>{tooltip}</p>
         </div>
-      </h4>
-      <h1 className='number'>
+      </p>
+      <p className='number'>
         {numberValue} <img className='icon' src={triangle} alt='' />
-      </h1>
+      </p>
 
-      <p>Previous : {subTitle}</p>
+      <p className='previous'>Previous : {subTitle}</p>
       <div>
         {star.map((starIcon, index) => (
           <img key={index} className='icon' src={starIcon} alt='' />
         ))}
       </div>
-      <p>Next star : {rating}</p>
+      <p className='nextStar'>Next star : {rating}</p>
     </div>
   );
 };

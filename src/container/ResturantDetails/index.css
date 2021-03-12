@@ -2,8 +2,18 @@
 .mainDiv {
   font-family: 'Roboto', sans-serif;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-evenly;
   height: 90vh;
   width: 99vw;
+}
+.donut {
+  margin-top: 10vh;
+}
+.cardsArea {
+  margin-top: 10vh;
+  width: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }

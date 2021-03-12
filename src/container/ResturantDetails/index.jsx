@@ -20,9 +20,12 @@ const ResturantDetails = () => {
   }, []);
   return (
     <div className='mainDiv'>
-      {cardDetails.map((data) => (
-        <Card {...data} />
-      ))}
+      <div className='donut'>donut</div>
+      <div className='cardsArea'>
+        {cardDetails.map((data) => (
+          <Card {...data} />
+        ))}
+      </div>
     </div>
   );
 };
