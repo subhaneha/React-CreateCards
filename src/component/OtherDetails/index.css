@@ -12,23 +12,32 @@
 .info {
   position: absolute;
   top: 0;
-  right: 0;
+  right: 10px;
   width: 15px;
 }
 .tooltip {
   display: none;
+  flex-direction: column;
   position: absolute;
-  right: 13px;
-  top: -91px;
-  font-size: 14px;
+  right: 1px;
+  top: -121px;
+  font-size: 12px;
   margin: 0;
   padding: 10px;
   background-color: #fff;
   color: #000;
-  border: 0.5px solid #333;
-  width: 100px;
-  height: 80px;
-  border-radius: 2.5px;
+  border: 0.3px solid #999;
+  width: 180px;
+  height: 90px;
+  border-radius: 5px;
+}
+.tooltip > p {
+  margin: 1px;
+  padding: 0;
+}
+.tooltip > p:first-child {
+  margin: 2px;
+  padding: 0;
 }
 .info > p {
   word-break: keep-all;
@@ -41,7 +50,7 @@
   margin: 3px;
 }
 .number {
-  font-size: 20px;
+  font-size: xx-large;
   margin: 3px;
 }
 .previous {

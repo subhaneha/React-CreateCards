@@ -8,12 +8,12 @@
   width: 99vw;
 }
 .donut {
-  margin-top: 10vh;
+  margin-top: 20vh;
 }
 .cardsArea {
-  margin-top: 10vh;
+  margin-top: 20vh;
   width: 75%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }

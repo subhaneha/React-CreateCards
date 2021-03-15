@@ -11,7 +11,13 @@ const OtherDetails = ({ title, number, subTitle, star, rating, tooltip }) => {
 
         <div className='info'>
           <img src={InfoCircle} alt='' />
-          <p className='tooltip'>{tooltip}</p>
+          <div className='tooltip'>
+            <p>{tooltip.data}</p>
+            <p>{tooltip.optionA}</p>
+            <p>{tooltip.optionB}</p>
+            <p>{tooltip.optionC}</p>
+            <p>{tooltip.optionD}</p>
+          </div>
         </div>
       </p>
       <p className='number'>
