@@ -1,17 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+.mainPage {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  width: 99vw;
+}
+.mainPageFirstDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 7vh;
+}
+.timePeriodDropDown {
+  background: #fff4cc;
+  padding: 15px;
+}
+#timePeriod {
+  width: 150px;
+  height: 30px;
+}
 .mainDiv {
   font-family: 'Roboto', sans-serif;
   display: flex;
   align-items: flex-start;
   justify-content: space-evenly;
-  height: 90vh;
-  width: 99vw;
 }
 .donut {
-  margin-top: 20vh;
+  margin-top: 10vh;
 }
 .cardsArea {
-  margin-top: 20vh;
+  margin-top: 10vh;
   width: 75%;
   display: flex;
   align-items: center;

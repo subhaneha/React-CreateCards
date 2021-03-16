@@ -31,9 +31,7 @@
   box-shadow: -9px 10px 18px -8px rgba(0, 0, 0, 0.73);
   /* border: 5px solid rgba(0, 209, 209, 0.829); */
 }
-.header {
-  /* width: 100%; */
-}
+
 .header > h4 {
   margin-left: 10px;
   margin-top: 5px;
