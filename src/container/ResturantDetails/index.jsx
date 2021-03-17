@@ -14,16 +14,31 @@ const useStyles = makeStyles((theme) => ({
   selectEmpty: {
     marginTop: theme.spacing(6),
   },
+  img: {
+    width: '55px',
+  },
+  mainPagesubHeading: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    width: '75%',
+  },
 }));
 const ResturantDetails = () => {
   const classes = useStyles();
   const [timePeriod, setTimePeriod] = useState('current');
   const [cardDetails, setCardDetails] = useState([]);
+  const [dropDown, setDropDown] = useState([]);
+  const [user, setUser] = useState({});
   useEffect(() => {
     const getData = async () => {
       try {
-        const { data } = await axios.get('data.json');
-        setCardDetails(data);
+        const {
+          data: { card, dropDown, user },
+        } = await axios.get('data.json');
+        setCardDetails(card);
+        setDropDown(dropDown);
+        setUser(user);
       } catch (error) {
         console.error(error);
       }
@@ -34,7 +49,8 @@ const ResturantDetails = () => {
     <div className='mainPage'>
       <div className='mainPageFirstDiv'>
         <h1>
-          Hi, Joe Your grading is in progress for the current time period.
+          Hi, {user.name} Your grading is in progress for the current time
+          period.
         </h1>
         <div className='timePeriodDropDown'>
           <FormControl className={classes.formControl}>
@@ -49,18 +65,27 @@ const ResturantDetails = () => {
               displayEmpty
               className={classes.selectEmpty}
             >
-              <MenuItem value='current'>Current</MenuItem>
-              <MenuItem value={'Jul2020toDec2020'}>
-                Jul 2020 to Dec 2020
-              </MenuItem>
-              <MenuItem value={'Jan2020toJun2020'}>
-                Jan 2020 to June 2020
-              </MenuItem>
-              <MenuItem value={'Jul2019toDec2019'}>
-                Jul 2019 to Dec 2019
-              </MenuItem>
+              {dropDown.map(({ value, name }, index) => (
+                <MenuItem key={index} value={value}>
+                  {name}
+                </MenuItem>
+              ))}
             </Select>
           </FormControl>
+        </div>
+      </div>
+      <div className={classes.mainPagesubHeading}>
+        <h2>Average Star Rating: 2.1/5 Stars </h2>
+        <div>
+          {[
+            '/assets/star-solid.svg',
+            '/assets/star-solid.svg',
+            '/assets/star-regular.svg',
+            '/assets/star-regular.svg',
+            '/assets/star-regular.svg',
+          ].map((data) => (
+            <img className={classes.img} src={data} alt='' />
+          ))}
         </div>
       </div>
       <div className='mainDiv'>
