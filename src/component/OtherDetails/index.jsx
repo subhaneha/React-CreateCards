@@ -6,7 +6,7 @@ const OtherDetails = ({ title, number, subTitle, star, rating, tooltip }) => {
   const { numberValue, triangle } = number;
   return (
     <div className='innerData'>
-      <p className='title'>
+      <div className='title'>
         {title}
 
         <div className='info'>
@@ -19,7 +19,7 @@ const OtherDetails = ({ title, number, subTitle, star, rating, tooltip }) => {
             <p>{tooltip.optionD}</p>
           </div>
         </div>
-      </p>
+      </div>
       <p className='number'>
         {numberValue} <img className='icon' src={triangle} alt='' />
       </p>

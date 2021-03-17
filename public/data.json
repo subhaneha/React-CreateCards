@@ -1,0 +1,117 @@
+[
+  {
+    "header": "Guest",
+    "otherDetailsData": [
+      {
+        "title": "Average Complaints Ratio",
+        "tooltip": {
+          "data": "The thresholds for the grade scoring are as follows:",
+          "optionA": "A: 0.0 to 0.0",
+          "optionB": "B: 0.0 to 0.0",
+          "optionC": "D: 0.0 to 0.0",
+          "optionD": "F: 0.0 to 0.0"
+        },
+        "number": { "numberValue": "16", "triangle": "/assets/caret-up-solid.svg" },
+        "subTitle": "8",
+        "star": [
+          "/assets/star-solid.svg",
+          "/assets/star-solid.svg",
+          "/assets/star-regular.svg",
+          "/assets/star-regular.svg",
+          "/assets/star-regular.svg"
+        ],
+        "rating": "Reduced by 3"
+      },
+      {
+        "title": "Average Window Time info",
+        "tooltip": {
+          "data": "The thresholds for the grade scoring are as follows:",
+          "optionA": "A: 0.0 to 0.0",
+          "optionB": "B: 0.0 to 0.0",
+          "optionC": "D: 0.0 to 0.0",
+          "optionD": "F: 0.0 to 0.0"
+        },
+        "number": { "numberValue": "70s", "triangle": "/assets/caret-down-solid.svg" },
+        "subTitle": "83s",
+        "star": [
+          "/assets/star-solid.svg",
+          "/assets/star-solid.svg",
+          "/assets/star-solid.svg",
+          "/assets/star-regular.svg",
+          "/assets/star-regular.svg"
+        ],
+        "rating": "Reduced by 5s"
+      }
+    ]
+  },
+  {
+    "header": "Team",
+    "otherDetailsData": [
+      {
+        "title": "Average Training Rate",
+        "tooltip": {
+          "data": "The thresholds for the grade scoring are as follows:",
+          "optionA": "A: 0.0 to 0.0",
+          "optionB": "B: 0.0 to 0.0",
+          "optionC": "D: 0.0 to 0.0",
+          "optionD": "F: 0.0 to 0.0"
+        },
+        "number": { "numberValue": "75%", "triangle": "/assets/caret-down-solid.svg" },
+        "subTitle": "83%",
+        "star": [
+          "/assets/star-solid.svg",
+          "/assets/star-solid.svg",
+          "/assets/star-regular.svg",
+          "/assets/star-regular.svg",
+          "/assets/star-regular.svg"
+        ],
+        "rating": "Increased by 5%"
+      },
+      {
+        "title": "Average Turnover Rate",
+        "tooltip": {
+          "data": "The thresholds for the grade scoring are as follows:",
+          "optionA": "A: 0.0 to 0.0",
+          "optionB": "B: 0.0 to 0.0",
+          "optionC": "D: 0.0 to 0.0",
+          "optionD": "F: 0.0 to 0.0"
+        },
+        "number": { "numberValue": "90%", "triangle": "/assets/caret-down-solid.svg" },
+        "subTitle": "105%",
+        "star": [
+          "/assets/star-solid.svg",
+          "/assets/star-solid.svg",
+          "/assets/star-solid.svg",
+          "/assets/star-regular.svg",
+          "/assets/star-regular.svg"
+        ],
+        "rating": "Reduced by 5%"
+      }
+    ]
+  },
+  {
+    "header": "Standard",
+    "otherDetailsData": [
+      {
+        "title": "Brand Standards",
+        "tooltip": {
+          "data": "The thresholds for the grade scoring are as follows:",
+          "optionA": "A: 0.0 to 0.0",
+          "optionB": "B: 0.0 to 0.0",
+          "optionC": "D: 0.0 to 0.0",
+          "optionD": "F: 0.0 to 0.0"
+        },
+        "number": { "numberValue": "73%", "triangle": "/assets/caret-down-solid.svg" },
+        "subTitle": "87%",
+        "star": [
+          "/assets/star-solid.svg",
+          "/assets/star-solid.svg",
+          "/assets/star-solid.svg",
+          "/assets/star-regular.svg",
+          "/assets/star-regular.svg"
+        ],
+        "rating": "Increased by 13%"
+      }
+    ]
+  }
+]

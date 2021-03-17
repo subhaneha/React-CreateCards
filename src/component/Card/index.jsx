@@ -9,8 +9,8 @@ const Card = ({ header, otherDetailsData }) => {
         <h4>{header}</h4>
       </div>
       <div className='OtherDetails'>
-        {otherDetailsData.map((data) => (
-          <OtherDetails {...data} />
+        {otherDetailsData.map((data, index) => (
+          <OtherDetails key={index} {...data} />
         ))}
       </div>
     </div>

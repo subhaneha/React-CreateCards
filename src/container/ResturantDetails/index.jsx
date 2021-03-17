@@ -6,7 +6,6 @@ import { InputLabel, MenuItem, FormControl, Select } from '@material-ui/core';
 import axios from 'axios';
 import './index.css';
 import Card from 'component/Card';
-import cardDetails from 'utils/data';
 const useStyles = makeStyles((theme) => ({
   formControl: {
     margin: theme.spacing(1),
@@ -19,13 +18,12 @@ const useStyles = makeStyles((theme) => ({
 const ResturantDetails = () => {
   const classes = useStyles();
   const [timePeriod, setTimePeriod] = useState('current');
+  const [cardDetails, setCardDetails] = useState([]);
   useEffect(() => {
     const getData = async () => {
       try {
-        const { data } = await axios.get(
-          'https://zxlot64861.execute-api.us-east-1.amazonaws.com/dev/getratingsbyrestaurant'
-        );
-        console.log(data);
+        const { data } = await axios.get('data.json');
+        setCardDetails(data);
       } catch (error) {
         console.error(error);
       }
@@ -68,8 +66,8 @@ const ResturantDetails = () => {
       <div className='mainDiv'>
         <div className='donut'>donut</div>
         <div className='cardsArea'>
-          {cardDetails.map((data) => (
-            <Card {...data} />
+          {cardDetails.map((data, index) => (
+            <Card key={index} {...data} />
           ))}
         </div>
       </div>
