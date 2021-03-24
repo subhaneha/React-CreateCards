@@ -7,7 +7,8 @@
   justify-content: center;
 }
 .icon {
-  width: 15px;
+  width: 40px;
+  height: 40px;
 }
 .info {
   position: absolute;
@@ -46,12 +47,11 @@
   display: flex;
 }
 .title {
-  font-size: 12px;
-  margin: 3px;
+  font-weight: normal;
 }
 .number {
-  font-size: xx-large;
-  margin: 3px;
+  font-weight: bold;
+  padding-right: 5px;
 }
 .previous {
   font-size: 16px;
@@ -60,4 +60,7 @@
 .nextStar {
   font-size: 12px;
   margin: 3px;
+}
+.numberDiv {
+  display: flex;
 }

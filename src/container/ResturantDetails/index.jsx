@@ -1,29 +1,62 @@
 import React, { useEffect, useState } from 'react';
 //material ui
-import { makeStyles } from '@material-ui/core/styles';
-import { InputLabel, MenuItem, FormControl, Select } from '@material-ui/core';
+import {
+  InputLabel,
+  MenuItem,
+  FormControl,
+  Select,
+  Grid,
+  Box,
+  Typography,
+} from '@material-ui/core';
+import useStyles from './style.js';
 
 import axios from 'axios';
 import './index.css';
 import Card from 'component/Card';
-const useStyles = makeStyles((theme) => ({
-  formControl: {
-    margin: theme.spacing(1),
-    minWidth: 180,
+// import { cloneDeep } from 'lodash';
+import * as agCharts from 'ag-charts-community';
+import { AgChartsReact } from 'ag-charts-react';
+
+const data = {
+  options: {
+    data: [
+      {
+        os: 'Android',
+        share: 56.9,
+      },
+      {
+        os: 'iOS',
+        share: 22.5,
+      },
+      {
+        os: 'BlackBerry',
+        share: 6.8,
+      },
+      {
+        os: 'Symbian',
+        share: 8.5,
+      },
+      {
+        os: 'Bada',
+        share: 2.6,
+      },
+      {
+        os: 'Windows',
+        share: 1.9,
+      },
+    ],
+    series: [
+      {
+        type: 'pie',
+        labelKey: 'os',
+        angleKey: 'share',
+        innerRadiusOffset: -70,
+      },
+    ],
   },
-  selectEmpty: {
-    marginTop: theme.spacing(6),
-  },
-  img: {
-    width: '55px',
-  },
-  mainPagesubHeading: {
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    width: '75%',
-  },
-}));
+};
+
 const ResturantDetails = () => {
   const classes = useStyles();
   const [timePeriod, setTimePeriod] = useState('current');
@@ -46,13 +79,12 @@ const ResturantDetails = () => {
     getData();
   }, []);
   return (
-    <div className='mainPage'>
-      <div className='mainPageFirstDiv'>
-        <h1>
-          Hi, {user.name} Your grading is in progress for the current time
-          period.
-        </h1>
-        <div className='timePeriodDropDown'>
+    <Box className={classes.mainDiv} mt={10}>
+      <Box item className={classes.mainDivFirstDiv}>
+        <Typography variant='h1' className={classes.mainDivHeading}>
+          Hi, {user.name}! Here's your Scorecard for July 2020 to Dec 2020.
+        </Typography>
+        <Box className={classes.timePeriodDropDown}>
           <FormControl className={classes.formControl}>
             <InputLabel shrink id='demo-simple-select-placeholder-label-label'>
               Time Period:
@@ -72,31 +104,35 @@ const ResturantDetails = () => {
               ))}
             </Select>
           </FormControl>
-        </div>
-      </div>
-      <div className={classes.mainPagesubHeading}>
-        <h2>Average Star Rating: 2.1/5 Stars </h2>
-        <div>
+        </Box>
+      </Box>
+      <Box item className={classes.mainPagesubHeading}>
+        <Typography variant='h3' style={{ margin: 0, padding: 0 }}>
+          Average Star Rating: 2.1/5 Stars{' '}
+        </Typography>
+        <Box m={0} p={0}>
           {[
-            '/assets/star-solid.svg',
-            '/assets/star-solid.svg',
-            '/assets/star-regular.svg',
-            '/assets/star-regular.svg',
-            '/assets/star-regular.svg',
+            '/assets/Star - medium.svg',
+            '/assets/Star - medium.svg',
+            '/assets/Star - medium.svg',
+            '/assets/Polygon 1.svg',
+            '/assets/Polygon 1.svg',
           ].map((data) => (
             <img className={classes.img} src={data} alt='' />
           ))}
+        </Box>
+      </Box>
+      <Grid item className='mainDiv'>
+        <div className='donut'>
+          <AgChartsReact options={data.options} />
         </div>
-      </div>
-      <div className='mainDiv'>
-        <div className='donut'>donut</div>
         <div className='cardsArea'>
           {cardDetails.map((data, index) => (
             <Card key={index} {...data} />
           ))}
         </div>
-      </div>
-    </div>
+      </Grid>
+    </Box>
   );
 };
 

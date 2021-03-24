@@ -2668,6 +2668,18 @@ adjust-sourcemap-loader@3.0.0:
     loader-utils "^2.0.0"
     regex-parser "^2.2.11"
 
+ag-charts-community@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/ag-charts-community/-/ag-charts-community-3.1.0.tgz#66093d42ef1ea08c09db0be979104431cb519a94"
+  integrity sha512-eCcmd2SmAZm04fR6Kcpi1hGTIOyG8a+6ERE7uWqGYJRA1QoYvswQl3IFn9bivNUNeExpFdqXyj97JUsshafnIA==
+
+ag-charts-react@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/ag-charts-react/-/ag-charts-react-3.1.0.tgz#70cffd3f6880c39050d31a6df0f7678708ce32c6"
+  integrity sha512-IhKD64uu9cbrsi1t/+6IuMR9mc7q/1+KcPL9JhPa519kcNsaq699AoO7ToyMl78DAgrD5qn6XOrXQAdyVphFsQ==
+  dependencies:
+    prop-types "^15.6.2"
+
 agent-base@6:
   version "6.0.2"
   resolved "https://registry.yarnpkg.com/agent-base/-/agent-base-6.0.2.tgz#49fff58577cfee3f37176feab4c22e00f86d7f77"

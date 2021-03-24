@@ -1,13 +1,14 @@
 import React from 'react';
 import './index.css';
 import OtherDetails from 'component/OtherDetails';
+import { Typography } from '@material-ui/core';
 
 const Card = ({ header, otherDetailsData }) => {
   return (
     <div className={`card ${header}`}>
-      <div className='header'>
-        <h4>{header}</h4>
-      </div>
+      <Typography variant='h2' className='header'>
+        {header}
+      </Typography>
       <div className='OtherDetails'>
         {otherDetailsData.map((data, index) => (
           <OtherDetails key={index} {...data} />

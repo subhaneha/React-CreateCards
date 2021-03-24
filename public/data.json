@@ -18,11 +18,11 @@
           },
           "subTitle": "8",
           "star": [
-            "/assets/star-solid.svg",
-            "/assets/star-solid.svg",
-            "/assets/star-regular.svg",
-            "/assets/star-regular.svg",
-            "/assets/star-regular.svg"
+            "/assets/Star - medium.svg",
+            "/assets/Star - medium.svg",
+            "/assets/Polygon 1.svg",
+            "/assets/Polygon 1.svg",
+            "/assets/Polygon 1.svg"
           ],
           "rating": "Reduced by 3"
         },
@@ -41,11 +41,11 @@
           },
           "subTitle": "83s",
           "star": [
-            "/assets/star-solid.svg",
-            "/assets/star-solid.svg",
-            "/assets/star-solid.svg",
-            "/assets/star-regular.svg",
-            "/assets/star-regular.svg"
+            "/assets/Star - medium.svg",
+            "/assets/Star - medium.svg",
+            "/assets/Star - medium.svg",
+            "/assets/Polygon 1.svg",
+            "/assets/Polygon 1.svg"
           ],
           "rating": "Reduced by 5s"
         }
@@ -69,11 +69,11 @@
           },
           "subTitle": "83%",
           "star": [
-            "/assets/star-solid.svg",
-            "/assets/star-solid.svg",
-            "/assets/star-regular.svg",
-            "/assets/star-regular.svg",
-            "/assets/star-regular.svg"
+            "/assets/Star - medium.svg",
+            "/assets/Star - medium.svg",
+            "/assets/Polygon 1.svg",
+            "/assets/Polygon 1.svg",
+            "/assets/Polygon 1.svg"
           ],
           "rating": "Increased by 5%"
         },
@@ -92,11 +92,11 @@
           },
           "subTitle": "105%",
           "star": [
-            "/assets/star-solid.svg",
-            "/assets/star-solid.svg",
-            "/assets/star-solid.svg",
-            "/assets/star-regular.svg",
-            "/assets/star-regular.svg"
+            "/assets/Star - medium.svg",
+            "/assets/Star - medium.svg",
+            "/assets/Star - medium.svg",
+            "/assets/Polygon 1.svg",
+            "/assets/Polygon 1.svg"
           ],
           "rating": "Reduced by 5%"
         }
@@ -120,11 +120,11 @@
           },
           "subTitle": "87%",
           "star": [
-            "/assets/star-solid.svg",
-            "/assets/star-solid.svg",
-            "/assets/star-solid.svg",
-            "/assets/star-regular.svg",
-            "/assets/star-regular.svg"
+            "/assets/Star - medium.svg",
+            "/assets/Star - medium.svg",
+            "/assets/Star - medium.svg",
+            "/assets/Polygon 1.svg",
+            "/assets/Polygon 1.svg"
           ],
           "rating": "Increased by 13%"
         }
@@ -137,5 +137,5 @@
     { "value": "Jan2020toJun2020", "name": "Jan 2020 to June 2020" },
     { "value": "Jul2019toDec2019", "name": "Jul 2019 to Dec 2019" }
   ],
-  "user": { "name": "joe" }
+  "user": { "name": "Joe" }
 }
